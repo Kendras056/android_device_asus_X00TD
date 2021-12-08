@@ -10,16 +10,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common DerpFest stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
+
+# Awaken stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_GAPPS := true
+AWAKEN_BUILD_TYPE := UNOFFICIAL
+USE_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_INCLUDE_STOCK_ARCORE := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := derp_X00TD
+PRODUCT_NAME := awaken_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
