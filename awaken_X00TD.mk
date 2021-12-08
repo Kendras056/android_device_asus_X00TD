@@ -9,15 +9,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common DerpFest stuff.
-$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
+# Inherit some common AwakenOS stuff
+$(call inherit-product, vendor/awaken/config/common.mk)
 
 # Awaken stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 AWAKEN_BUILD_TYPE := UNOFFICIAL
 USE_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 TARGET_INCLUDE_STOCK_ARCORE := true
