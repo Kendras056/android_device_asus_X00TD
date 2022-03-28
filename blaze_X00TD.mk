@@ -20,7 +20,6 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Gapps flag
 TARGET_GAPPS_ARCH := arm64
-WITH_GAPPS := true
 
 # Unofficial flag
 BLAZE_MAINTAINER := Tiktodz
