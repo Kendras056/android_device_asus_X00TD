@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/syberia_X00TD.mk
+    $(LOCAL_DIR)/octavi_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    syberia_X00TD-userdebug \
-    syberia_X00TD-user \
-    syberia_X00TD-eng
+    octavi_X00TD-userdebug \
+    octavi_X00TD-user \
+    octavi_X00TD-eng
