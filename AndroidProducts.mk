@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fuse_X00TD.mk
+    $(LOCAL_DIR)/syberia_X00TD.mk
 
 COMMON_LUNCH_CHOICES := \
-    fuse_X00TD-userdebug \
-    fuse_X00TD-user \
-    fuse_X00TD-eng
+    syberia_X00TD-userdebug \
+    syberia_X00TD-user \
+    syberia_X00TD-eng
