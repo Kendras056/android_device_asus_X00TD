@@ -10,21 +10,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Inherit some common FusionOS stuff
-$(call inherit-product, vendor/fuse/config/common.mk)
-FUSE_BUILD_VARIANT := UNOFFICIAL
+$(call inherit-product, vendor/syberia/config/common.mk)
+SYBERIA_BUILD_TYPE := UNOFFICIAL
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Gapps flag
 TARGET_GAPPS_ARCH := arm64
-WITH_GAPPS := true
+#WITH_GAPPS := true
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := fuse_X00TD
+PRODUCT_NAME := syberia_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
