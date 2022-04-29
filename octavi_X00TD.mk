@@ -9,22 +9,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
-# Inherit some common FusionOS stuff
-$(call inherit-product, vendor/syberia/config/common.mk)
-SYBERIA_BUILD_TYPE := UNOFFICIAL
+# Inherit some common OctaviOS stuff
+$(call inherit-product, vendor/octavi/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Gapps flag
 TARGET_GAPPS_ARCH := arm64
-#WITH_GAPPS := true
+WITH_GAPPS := true
+
+# Custom stuff
+TARGET_FACE_UNLOCK_SUPPORTED := true
+USE_PIXEL_CHARGER := true
+OCTAVI_BUILD_TYPE := UNOFFICIAL
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := syberia_X00TD
+PRODUCT_NAME := octavi_X00TD
 PRODUCT_DEVICE := X00TD
 PRODUCT_BRAND := asus
 PRODUCT_MODEL := Zenfone Max Pro M1
