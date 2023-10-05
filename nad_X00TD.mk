@@ -12,12 +12,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 # Inherit some common Nusantara stuff
 $(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
-NAD_BUILD_TYPE := UNOFFICIAL
-
-# Boot Animation
+# Nusantara flags
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
-USE_PIXEL_CHARGER := true
+USE_PIXEL_CHARGING := true
+NAD_BUILD_TYPE := UNOFFICIAL
 
 # Inherit from X00TD device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
