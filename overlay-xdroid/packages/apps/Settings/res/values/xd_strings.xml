@@ -20,4 +20,7 @@
     <string name="xd_camera_mp_summary">13MP+8MP Dual Camera</string>
     <string name="xd_screen_type_summary">IPS LCD HD+ 5.99 Screen</string>
 
+    <!-- xd. Maintainer -->
+    <string name="xd_maintainer">dotkit</string>
+
 </resources>
